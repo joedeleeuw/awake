@@ -1,0 +1,210 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DA67B421B711864241D14AA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1B9BBAB171000D9474C665 /* main.swift */; };
+		71EB89A02F45EA7A69CEEB92 /* PanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93166F15567BC7621C4BA8C3 /* PanelView.swift */; };
+		86CCC77A1DF346316BBC2100 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4CE47D3DD6D0B0B6EF16A68 /* Assets.xcassets */; };
+		B3C1AF38414428D90343310C /* AwakeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A342829CDB3B2368B9B5E43B /* AwakeModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B1B9BBAB171000D9474C665 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7E65A836CC9F4D759239465E /* Awake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Awake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93166F15567BC7621C4BA8C3 /* PanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelView.swift; sourceTree = "<group>"; };
+		A342829CDB3B2368B9B5E43B /* AwakeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwakeModel.swift; sourceTree = "<group>"; };
+		C4CE47D3DD6D0B0B6EF16A68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		4CAD08AAE9661A2676432290 = {
+			isa = PBXGroup;
+			children = (
+				C4CE47D3DD6D0B0B6EF16A68 /* Assets.xcassets */,
+				DD4B8025F3AACF232AA91DB0 /* Sources */,
+				5A4047060AC251309745CC34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A4047060AC251309745CC34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E65A836CC9F4D759239465E /* Awake.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD4B8025F3AACF232AA91DB0 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A342829CDB3B2368B9B5E43B /* AwakeModel.swift */,
+				3B1B9BBAB171000D9474C665 /* main.swift */,
+				93166F15567BC7621C4BA8C3 /* PanelView.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85435FD7247D379480ECAC14 /* Awake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 344EBF1C64FEF357DF5FAB44 /* Build configuration list for PBXNativeTarget "Awake" */;
+			buildPhases = (
+				49A1AC8B8E84C4EF3CE2F1B3 /* Sources */,
+				3DEB0F49C09B1125AA3EEA97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Awake;
+			packageProductDependencies = (
+			);
+			productName = Awake;
+			productReference = 7E65A836CC9F4D759239465E /* Awake.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23B9A3829AC0D983FC55D916 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					85435FD7247D379480ECAC14 = {
+						DevelopmentTeam = 73JT8436MP;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 244F6E28F5BF821B23D22617 /* Build configuration list for PBXProject "Awake" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 4CAD08AAE9661A2676432290;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5A4047060AC251309745CC34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85435FD7247D379480ECAC14 /* Awake */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DEB0F49C09B1125AA3EEA97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86CCC77A1DF346316BBC2100 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49A1AC8B8E84C4EF3CE2F1B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3C1AF38414428D90343310C /* AwakeModel.swift in Sources */,
+				71EB89A02F45EA7A69CEEB92 /* PanelView.swift in Sources */,
+				6DA67B421B711864241D14AA /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3AB8763EA92C19EDE60ED98A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 73JT8436MP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joedeleeuw.awake;
+				PRODUCT_NAME = Awake;
+			};
+			name = Debug;
+		};
+		96B951669FA963E0C761ACA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 73JT8436MP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joedeleeuw.awake;
+				PRODUCT_NAME = Awake;
+			};
+			name = Release;
+		};
+		973C6B1EE1C40A4EA7B36D91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F83C5DB031B5071169E1C4F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		244F6E28F5BF821B23D22617 /* Build configuration list for PBXProject "Awake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				973C6B1EE1C40A4EA7B36D91 /* Debug */,
+				F83C5DB031B5071169E1C4F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		344EBF1C64FEF357DF5FAB44 /* Build configuration list for PBXNativeTarget "Awake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AB8763EA92C19EDE60ED98A /* Debug */,
+				96B951669FA963E0C761ACA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23B9A3829AC0D983FC55D916 /* Project object */;
+}
