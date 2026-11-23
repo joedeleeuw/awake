@@ -30,7 +30,7 @@ sed -i '' -E "s/(MARKETING_VERSION: )\"[^\"]*\"/\1\"$VERSION\"/" project.yml
 sed -i '' -E "s/(CURRENT_PROJECT_VERSION: )\"[0-9]+\"/\1\"$BUILD\"/" project.yml
 xcodegen generate --quiet
 
-step "Archive (Apple silicon + Intel)"
+step "Archive (Apple silicon; macOS 27 has no Intel support)"
 rm -rf "$OUT" && mkdir -p "$OUT"
 xcodebuild -project Awake.xcodeproj -scheme Awake -configuration Release \
   -destination 'generic/platform=macOS' -archivePath "$OUT/Awake.xcarchive" \
