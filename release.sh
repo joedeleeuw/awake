@@ -59,7 +59,7 @@ echo "Ready: $ZIP"
 
 if [[ $PUBLISH == --publish ]]; then
   step "Publish v$VERSION"
-  git commit -qam "Release v$VERSION"
+  git commit -qam "chore(release): v$VERSION"
   git tag "v$VERSION"
   git push -q origin HEAD "v$VERSION"
   gh release create "v$VERSION" "$ZIP" --title "Awake $VERSION" --generate-notes
