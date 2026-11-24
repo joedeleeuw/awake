@@ -55,6 +55,8 @@ xcrun stapler staple -q "$OUT/Awake.app"
 step "Verify"
 spctl -a -vv "$OUT/Awake.app" 2>&1 | grep -q "Notarized Developer ID" || { spctl -a -vv "$OUT/Awake.app"; exit 1; }
 ditto -c -k --keepParent "$OUT/Awake.app" "$ZIP"
+# A fixed name too, so .../releases/latest/download/Awake.zip always gets the newest.
+cp "$ZIP" "$OUT/Awake.zip"
 echo "Ready: $ZIP"
 
 if [[ $PUBLISH == --publish ]]; then
@@ -62,5 +64,5 @@ if [[ $PUBLISH == --publish ]]; then
   git commit -qam "chore(release): v$VERSION"
   git tag "v$VERSION"
   git push -q origin HEAD "v$VERSION"
-  gh release create "v$VERSION" "$ZIP" --title "Awake $VERSION" --generate-notes
+  gh release create "v$VERSION" "$ZIP" "$OUT/Awake.zip" --title "Awake $VERSION" --generate-notes
 fi

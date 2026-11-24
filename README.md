@@ -8,7 +8,7 @@ Click the cup in the menu bar and choose the moon (sleep normally) or the cup
 No network access, no updater, no tracking. It holds the same power assertion
 as Apple's `caffeinate -d`, and that's all.
 
-Requires macOS 27. Download the latest zip from [Releases](../../releases).
+Requires macOS 27. [Download the latest version](https://github.com/joedeleeuw/awake/releases/latest/download/Awake.zip).
 Design notes are in [STYLEGUIDE.md](STYLEGUIDE.md).
 
 ## Build
