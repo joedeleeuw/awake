@@ -28,7 +28,7 @@ One control, nothing loud. White, light grey, black.
 
 ## Motion
 
-- The capsule fades in (0.15s) and out (0.12s). A click anywhere else or Escape closes it.
+- The capsule fades in (0.15s) and out (0.12s). It closes 0.35s after a choice, once the pill has finished sliding, or on a click anywhere else or Escape.
 - The white pill slides between segments (`matchedGeometryEffect`, `.smooth(duration: 0.28)`).
 - Nothing else animates.
 

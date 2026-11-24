@@ -11,6 +11,8 @@ private enum Style {
 
 struct PanelView: View {
     @Bindable var model: AwakeModel
+    /// Called after any choice, so the panel can close.
+    var onSelect: () -> Void = {}
     @Namespace private var selection
 
     var body: some View {
@@ -28,7 +30,10 @@ struct PanelView: View {
 
     private func segment(_ symbol: String, selected: Bool, label: String,
                          action: @escaping () -> Void) -> some View {
-        Button(action: action) {
+        Button {
+            action()
+            onSelect()
+        } label: {
             Image(systemName: symbol)
                 .font(.system(size: 14, weight: .medium))
                 .foregroundStyle(selected ? Style.ink : Style.inkQuiet)

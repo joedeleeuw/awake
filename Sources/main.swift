@@ -17,7 +17,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     private var monitors: [Any] = []
 
     private lazy var panel: GlassPanel = {
-        let host = NSHostingView(rootView: PanelView(model: model))
+        // After a choice, let the pill finish sliding, then close.
+        let host = NSHostingView(rootView: PanelView(model: model) { [weak self] in
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) { self?.hidePanel() }
+        })
         let panel = GlassPanel(contentRect: NSRect(origin: .zero, size: host.fittingSize),
                                styleMask: [.borderless, .nonactivatingPanel],
                                backing: .buffered, defer: false)
