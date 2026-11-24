@@ -4,7 +4,7 @@
 import SwiftUI
 
 private enum Style {
-    static let track = Color(white: 0.93).opacity(0.85)
+    static let track = Color(white: 0.86).opacity(0.80)
     static let ink = Color.black.opacity(0.86)
     static let inkQuiet = Color.black.opacity(0.32)
 }

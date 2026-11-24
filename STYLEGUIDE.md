@@ -14,7 +14,7 @@ One control, nothing loud. White, light grey, black.
 
 | Token | Value | Use |
 |---|---|---|
-| track | white 93% at 85%, as a glass tint | The light grey glass capsule. A strong white tint keeps the wallpaper's color out. |
+| track | white 86% at 80%, as a glass tint | The light grey glass capsule. Grey enough that the white pill stands out, even over white windows. |
 | pill | pure white; shadow black 10%, radius 1.5, y 1; no border | The selected choice, raised |
 | ink | black 86% | Selected icon |
 | ink quiet | black 32% | Unselected icon |
